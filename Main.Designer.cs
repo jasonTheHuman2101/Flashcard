@@ -48,6 +48,7 @@ namespace Flashcard
             this.holdingFrame = new System.Windows.Forms.Panel();
             this.saveDiag = new System.Windows.Forms.SaveFileDialog();
             this.openDiag = new System.Windows.Forms.OpenFileDialog();
+            this.helpBttn = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.holdingFrame.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +59,8 @@ namespace Flashcard
             this.fileBox,
             this.aboutBttn,
             this.toolStripSeparator1,
-            this.messageLabel});
+            this.messageLabel,
+            this.helpBttn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(708, 25);
@@ -205,6 +207,17 @@ namespace Flashcard
             this.holdingFrame.Size = new System.Drawing.Size(708, 334);
             this.holdingFrame.TabIndex = 9;
             // 
+            // helpBttn
+            // 
+            this.helpBttn.BackColor = System.Drawing.Color.IndianRed;
+            this.helpBttn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.helpBttn.Image = ((System.Drawing.Image)(resources.GetObject("helpBttn.Image")));
+            this.helpBttn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.helpBttn.Name = "helpBttn";
+            this.helpBttn.Size = new System.Drawing.Size(36, 22);
+            this.helpBttn.Text = "Help";
+            this.helpBttn.Click += new System.EventHandler(this.helpBttn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,6 +256,7 @@ namespace Flashcard
         private System.Windows.Forms.Panel holdingFrame;
         private System.Windows.Forms.SaveFileDialog saveDiag;
         private System.Windows.Forms.OpenFileDialog openDiag;
+        private System.Windows.Forms.ToolStripButton helpBttn;
     }
 }
 

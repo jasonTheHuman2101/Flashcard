@@ -171,5 +171,11 @@ namespace Flashcard
                 uiEnabled(true);
             }
         }
+
+        private void helpBttn_Click(object sender, EventArgs e)
+        {
+            helpDisplay hd = new helpDisplay();
+            hd.ShowDialog();
+        }
     }
 }
