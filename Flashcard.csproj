@@ -88,6 +88,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="_bin\_debug\Flashcard.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_bin\_debug\Flashcard.exe" />
+    <Content Include="_bin\_debug\Flashcard.pdb" />
+    <Content Include="_bin\_debug\Newtonsoft.Json.dll" />
+    <Content Include="_bin\_debug\Newtonsoft.Json.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
